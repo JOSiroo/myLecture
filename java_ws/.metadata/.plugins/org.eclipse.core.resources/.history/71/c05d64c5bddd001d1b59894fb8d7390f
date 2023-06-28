@@ -1,0 +1,17 @@
+package com.day24;
+
+public class EventTest1 extends Frame{
+	private Button btClose;
+	
+	public EventTest1() {
+		btClose = new Button("닫기");
+		this.add(btClose, "South");
+		
+	}
+	
+	
+	public static void main(String[] args) {
+
+	}
+
+}

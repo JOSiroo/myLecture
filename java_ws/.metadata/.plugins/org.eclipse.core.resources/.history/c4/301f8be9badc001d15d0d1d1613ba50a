@@ -1,0 +1,9 @@
+package com.day23;
+
+public class CalendarTest2 {
+
+	public static void main(String[] args) {
+		final String[] WEEK = {"", "일", "월", "화", "수", "목", "금", "토,"};
+	}
+
+}

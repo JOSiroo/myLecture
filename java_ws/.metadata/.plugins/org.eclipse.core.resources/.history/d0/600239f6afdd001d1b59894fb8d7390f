@@ -1,0 +1,38 @@
+package eeee;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+class MyRectangle{
+	int w;
+	int h;
+
+	MyRectangle(int w, int h){
+		this.w = w;
+		this.h = h;
+	}
+
+	public int findArea(){
+		return w*h;
+	}
+	public int findGirth(){
+		return (w+h)*2;
+	}
+}
+public class eeee {
+
+	public static void main(String[] args) throws ParseException {
+		Scanner sc = new Scanner(System.in);
+		Calendar cal = Calendar.getInstance();
+		Date d = cal.getTime();
+		SimpleDatFormay sdf = new SimpleDateFormat("yyyy/MM/dd hh:mm:ss");
+		String str = sdf.format(d);
+		
+			
+		
+		}
+	}
+
+
+

@@ -1,0 +1,55 @@
+package com.hw;
+
+import java.util.Scanner;
+
+public class HwTime {
+	public static void main(String[] args) 	{
+		int[] hour = new int[3];
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("시간을 입력하세요(시, 분, 초)");
+		for (int i=0;i<hour.length ;i++ ){			
+			int h = sc.nextInt();
+			hour[i] = h;
+		}
+
+		Time t = new Time(hour);
+		t.incrementHour();
+		int[] hours = t.getHours();	
+		
+		System.out.println("----1시간 1분 1초 후------");
+		for (int i=0;i<hours.length ;i++ ){
+			System.out.print(hours[i]);
+			if (i<hours.length-1)
+				System.out.print(" : ");
+		}//for	
+		System.out.println();
+	
+	}
+}
+
+class Time{
+	private int[] hours = new int[3]; 
+	
+	public Time(int[] hours) { 
+		this.hours = hours;
+	}
+	
+	public void setHours(int[] hours){
+		this.hours = hours;
+	}
+	
+	public int[] getHours(){
+		return hours;
+	}
+
+	public void incrementHour(){
+		//hours배열의 시, 분, 초를 모두 1증가
+		for (int i=0;i<hours.length ;i++ ){
+			hours[i]++;
+		}		
+	}
+
+	
+
+}//

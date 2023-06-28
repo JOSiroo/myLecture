@@ -1,0 +1,24 @@
+package com.day23.ETC;
+
+import java.util.StringTokenizer;
+
+public class StringTokenizerTest {
+
+	public static void main(String[] args) {
+	/*
+	 	StringTokenizer - 긴 문자열을 지정된 구분자를 기준으로 토큰이라는 여러 개의 작은 문자열로
+	 						잘라내는데 사용됨
+	 					- 구분자로 단 하나의 문자밖에 사용하지 못함
+	 					
+	 	String클래스의 split()과 유사
+	*/
+	String str = "10,20,30,40,50";
+	StringTokenizer stk = new StringTokenizer(str, ",");
+	
+	while(stk.hasMoreTokens()) {
+		String token = stk.nextToken();
+		System.out.println(token);
+	}
+	}
+
+}

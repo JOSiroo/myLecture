@@ -1,0 +1,82 @@
+package FinalTest;
+
+import java.util.Scanner;
+
+/*
+	1478 → "one4seveneight"
+	234567 → "23four5six7"
+	10203 → "1zerotwozero3"
+	이렇게 숫자의 일부 자릿수가 영단어로 바뀌어졌거나, 혹은 바뀌지 않고 그대로인 문자열 s가 
+	매개변수로 주어진다. s가 의미하는 원래 숫자를 return 하도록 메서드 만들기
+ */
+
+
+class NumGameC{
+	public String process(String str) {
+		String abc = "";
+		int index = 0;
+		String[] abcArr = new String[index];
+
+		for(int i = 0; i < str.length(); i++) {
+			if(!(str.charAt(i) >= 48 && str.charAt(i) <= 57)) {
+				abc += str.charAt(i);
+			}else {
+				abcArr[index] = abc;
+				index++;
+			}
+		}
+		String result = "";
+		for(int i = 0; i < abcArr.length; i++) {
+			String change = abcArr[i].toString();
+			String replaceNum = "";
+			switch(change) {
+			case "zero":
+				replaceNum = "0";
+				break;
+			case "one":
+				replaceNum = "1";
+				break;
+			case "two":
+				replaceNum = "2";
+				break;
+			case "three":
+				replaceNum = "3";
+				break;
+			case "four":
+				replaceNum = "4";
+				break;
+			case "five":
+				replaceNum = "5";
+				break;
+			case "six":
+				replaceNum = "6";
+				break;
+			case "seven":
+				replaceNum = "7";
+				break;
+			case "eight":
+				replaceNum = "8";
+				break;
+			case "nine":
+				replaceNum = "9";
+				break;
+			}
+			result = str.replace(change, replaceNum);
+		}
+		return result;
+	}
+}
+
+public class NumGame {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("영문자를 포함한 숫자 문자열을 입력하세요");
+		NumGameC ng = new NumGameC();
+		String input = sc.nextLine();
+		String result = ng.process(input);
+
+		System.out.println(result);
+	}
+
+}

@@ -1,0 +1,49 @@
+package eeee;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.StringTokenizer;
+class MyRectangle{
+	int w;
+	int h;
+	
+MyRectangle(int w, int h){
+	this.w = w;
+	this.h = h;
+}
+
+	public int findArea(){
+		return w*h;
+	}
+	public int findGirth(){
+		return (w+h)*2;
+	}
+}
+public class eeee {
+
+		public static void main(String[] args) {
+			String source =
+                    "1,김길재,70,100,88|2,박길동,95,80,90|3,이길수,80,90,90";
+
+		//(1) 두 개의 StringTokenizer 와 이중 반복문을 사용해서 처리한 후 출력
+		StringTokenizer stk = new StringTokenizer(source, "\\|");
+		
+
+		while(stk.hasMoreTokens()){
+			String token = nextToken();
+			StringTokenizer stk2 = new StringTokenizer(token, ",");
+			while(stk2.hasNextTokens()){
+				String token2 = nextToken();
+				System.out.print(token2);
+			}
+			System.out.println(" ");
+		}
+
+
+			
+		}
+	}
+
+
+

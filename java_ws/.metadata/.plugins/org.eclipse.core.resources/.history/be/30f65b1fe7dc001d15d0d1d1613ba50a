@@ -1,0 +1,60 @@
+package com.day21;
+
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class TreeSetTest1 {
+
+	public static void main(String[] args) {
+		/*
+		 	TreeSet : Set 인터페이스 구현체
+		 		- 데이터를 정렬된 상태로 저장함
+		*/
+		TreeSet<Integer> set = new TreeSet<>();
+		for(int i = 0; i < 6; i++){
+			int randomVal = (int)(Math.random()*45)+1;
+			set.add(randomVal);
+		}
+		System.out.println(set.size());
+		
+		TreeSet<Integer> tSet = new TreeSet<>();
+		tSet.add(1);
+		tSet.add(5);
+		tSet.add(2);
+		tSet.add(3);
+		tSet.add(2);	//저장될때마다 데이터가 정렬됨
+		
+		System.out.println("데이터 개수 : " + tSet.size());
+		
+		Iterator<Integer> iter = tSet.iterator();
+		while(iter.hasNext()) {
+			System.out.println(iter.next());
+		}
+		
+		//Integer의 정렬 기준 - 숫자의 크고 작음을 기준으로 정렬됨
+System.out.println("====================================");
+		TreeSet<String> set = new TreeSet<>();
+		set.add("홍길동");
+		set.add("김길동");
+		set.add("이길동");
+		set.add("박길동");
+		set.add("xyz");
+		set.add("ab");
+		set.add("java");
+		set.add("JAVA");
+		set.add("C");
+		set.add("SPRING");
+		set.add("7");
+		set.add("4");
+		set.add("1");
+		
+		Iterator<String> iter2 = set.iterator();
+		while(iter2.hasNext()) {
+			String s2 = iter2.next();
+			System.out.println(s2);
+		}
+		//String의 정렬기준 - 숫자 => 영어 대문자순서대로 => 소문자순서대로 => 한글
+		//				   문자의 코드값이 기준이 됨
+	}
+
+}

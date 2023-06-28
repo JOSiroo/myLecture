@@ -1,0 +1,29 @@
+package FinalTest;
+/*
+	1478 → "one4seveneight"
+	234567 → "23four5six7"
+	10203 → "1zerotwozero3"
+	이렇게 숫자의 일부 자릿수가 영단어로 바뀌어졌거나, 혹은 바뀌지 않고 그대로인 문자열 s가 
+	매개변수로 주어진다. s가 의미하는 원래 숫자를 return 하도록 메서드 만들기
+ */
+class NumTable{
+	final protected String zero = "zero";
+	final protected String one = "one";
+	final protected String two = "two";
+	final protected String three = "three";
+	final String four = "four";
+	final String five = "five";
+	final String six = "six";
+	final String eight = "eight";
+	final String nine = "nine";
+}
+
+class
+
+public class NumGame {
+
+	public static void main(String[] args) {
+
+	}
+
+}

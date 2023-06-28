@@ -1,0 +1,22 @@
+package com.day24;
+
+public class EventTest1 extends Frame{
+	private Button btClose;
+	
+	public EventTest1() {
+		btClose = new Button("닫기");
+		this.add(btClose, "South");
+		
+	}//생성자
+	
+	class EventHandler implements ActionListener{
+		
+	}
+	
+	public static void main(String[] args) {
+		EventTest1 f = new EventTest1();
+		f.setSize(300, 200);
+		f.setVisible(true);
+	}
+
+}

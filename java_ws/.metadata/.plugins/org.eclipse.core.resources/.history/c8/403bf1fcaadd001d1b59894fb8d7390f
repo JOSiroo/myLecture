@@ -1,0 +1,56 @@
+package eeee;
+
+import java.util.StringTokenizer;
+class MyRectangle{
+	int w;
+	int h;
+	
+MyRectangle(int w, int h){
+	this.w = w;
+	this.h = h;
+}
+
+	public int findArea(){
+		return w*h;
+	}
+	public int findGirth(){
+		return (w+h)*2;
+	}
+}
+public class eeee {
+
+		public static void main(String[] args) {
+			String source =
+                    "1,김길재,70,100,88|2,박길동,95,80,90|3,이길수,80,90,90";
+
+		//(1) 두 개의 StringTokenizer 와 이중 반복문을 사용해서 처리한 후 출력
+		StringTokenizer stk = new StringTokenizer(source, "\\|");
+		
+String[] sArr = source.split("\\|");
+		
+		for(int i = 0; i < sArr.length; i++){
+			String[] sArr2 = sArr[i].split(",");
+			for(int k = 0; k < sArr[i].length(); k++){
+				System.out.print(sArr2[i] + " ");
+			}				
+			System.out.println(" ");
+		}
+		
+
+		while(stk.hasMoreTokens()){
+			String token = stk.nextToken();
+			StringTokenizer stk2 = new StringTokenizer(token, ",");
+			while(stk2.hasMoreTokens()){
+				String token2 = stk2.nextToken();
+				System.out.print(token2 + " ");
+			}
+			System.out.println(" ");
+		}
+
+
+			
+		}
+	}
+
+
+

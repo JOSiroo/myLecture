@@ -1,0 +1,23 @@
+package com.day23.ETC;
+
+import java.util.StringTokenizer;
+
+public class StringTokenizerTest2 {
+
+	public static void main(String[] args) {
+		String str = "1,홍길동,100,90,80|2,김길동,95,85,75|3,이길동,88,77,66";
+		String str1 = "angdlkn23ln23ln IJE r23j5io 3jwaiwt23 23i12n4i`2 4p;25423 54o3643n 634on qa;43n2n51235in132O;N412O;N412ON51235 13 523I 52IO3 5H2O35 H2IO35O3 RFIOQirq i";
+		
+		StringTokenizer stk = new StringTokenizer(str, "|");
+		StringTokenizer stk2 = new StringTokenizer(str, " ");
+		
+		while(stk.hasMoreTokens()) {
+			String token = stk.nextToken();
+			System.out.println(token);
+		}
+		while(stk2.hasMoreTokens()) {
+			String token = stk2.nextToken();
+			System.out.println(token);
+		}
+	}
+}

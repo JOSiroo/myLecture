@@ -1,0 +1,22 @@
+package com.day23.ETC;
+
+public class StringTest {
+
+	public static void main(String[] args) {
+		/*
+		 	String 클래스의 인스턴스는 상수 형태의 인스턴스
+		 		원칙 - 문자열이 동일한 경우에는 하나의 String 인스턴스만 생성해서 공유한다!
+		*/
+
+		String str1 = "Hello";
+		String str2 = "Hello";
+		String str3 = "Java";
+		
+		if(str1 == str2) {
+			System.out.println("str1, str2는 동일 인스턴스 참조");
+		}else {
+			System.out.println("str1, str2는 동일 인스턴스 참조");
+		}
+	}
+
+}

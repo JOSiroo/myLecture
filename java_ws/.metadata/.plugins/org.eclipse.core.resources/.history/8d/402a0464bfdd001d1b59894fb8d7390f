@@ -1,0 +1,10 @@
+package com.day24;
+
+public class EventTest2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

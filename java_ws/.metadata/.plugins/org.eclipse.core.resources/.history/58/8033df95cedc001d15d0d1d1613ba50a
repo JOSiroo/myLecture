@@ -1,0 +1,11 @@
+package com.day23;
+
+public class ParseTest {
+
+	public static void main(String[] args) {
+		//public Date parse(String source) throws ParseException - 문자열을 날짜로 변환
+		//사용자가 입력한 날짜와 오늘날짜 사이의 간격 구하기
+		// => 사용자가 입력한 문자열 형식의 날짜를 Date로 변환해야함
+	}
+
+}

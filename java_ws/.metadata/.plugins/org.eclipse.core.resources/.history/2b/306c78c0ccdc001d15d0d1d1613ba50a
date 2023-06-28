@@ -1,0 +1,12 @@
+package com.day23;
+
+import java.util.Calendar;
+
+public class DateFormatTest {
+
+	public static void main(String[] args) {
+		//public final String format(Date date)
+		Calendar cal = Calendar.getInstance();
+	}
+
+}

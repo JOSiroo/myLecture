@@ -1,0 +1,15 @@
+package com.day23;
+
+import java.util.Calendar;
+
+public class CalendarDateTest {
+
+	public static void main(String[] args) {
+		Calendar cal = Calendar.getInstance();
+		Calendar cal2 = Calendar.getInstance();
+		
+		cal.set(1990, 7, 15);
+
+	}
+
+}

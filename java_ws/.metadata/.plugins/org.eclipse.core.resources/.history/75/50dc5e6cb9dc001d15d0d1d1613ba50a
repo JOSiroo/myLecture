@@ -1,0 +1,16 @@
+package com.day23;
+
+import java.util.Calendar;
+
+public class CalendarTest1 {
+
+	public static void main(String[] args) {
+		Calendar cal = Calendar.getInstance();
+		
+		int year = cal.get(Calendar.YEAR);
+		int month = cal.get(Calendar.MONTH);
+		
+		System.out.println(year + "년 " + (month+1) + "월 " + cal.get(Calendar.DATE) + "일");
+	}
+
+}

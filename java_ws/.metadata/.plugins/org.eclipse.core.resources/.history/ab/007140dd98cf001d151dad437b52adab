@@ -1,0 +1,21 @@
+package com.day14;
+
+Person {
+	private String name;
+	private int age;
+	
+	Person(){
+		
+	}
+	
+	
+}
+
+
+public class PersonIn {
+
+	public static void main(String[] args) {
+
+	}
+
+}

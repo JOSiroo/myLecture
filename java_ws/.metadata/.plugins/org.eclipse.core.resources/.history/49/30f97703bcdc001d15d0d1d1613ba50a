@@ -1,0 +1,33 @@
+package com.day23;
+
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+public class CalendarTest2 {
+
+	public static void main(String[] args) {
+							//	0	1	 2	   3	4	 5	  6		7
+		final String[] WEEK = {"", "일", "월", "화", "수", "목", "금", "토,"};
+		
+		Calendar cal1 = new GregorianCalendar();	
+		Calendar cal2 = Calendar.getInstance();
+		cal2.set(2023, 3, 1);	//2023-0-01
+
+		
+		
+		String str = showDate(cal1);
+		String str2 = showDate(cal2);
+		System.out.println("cal1 : " + str);
+		System.out.println("요일 : " + WEEK );
+		
+		System.out.println("cal2 : " + str2);
+		System.out.println("요일 : " + );
+		
+	}
+	
+	public static String showDate(Calendar cal) {
+		return cal.get(Calendar.YEAR) + "년 " + cal.get(Calendar.MONTH) + "월 "
+				+ cal.get(Calendar.DATE) + "일";
+	}
+
+}
